@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as C from "./Global";
+import Lindo from "./img/lindo.jpg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <C.Container>
+      <C.LeftSide>
+        <C.Avatar>
+          <C.Image src={Lindo} alt="foto" />
+        </C.Avatar>
+      </C.LeftSide>
+      <C.RightSide>
+      <h1>Ola Mundo, eu sou <span>Aklysson Roberto</span></h1>
+      <p>Este é o meu Portfólio Pessoal, aqui você pode encontrar um pouco mais sobre mim e meu trabalho.</p>
+      </C.RightSide>
+    </C.Container>
   );
 }
 
